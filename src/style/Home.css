@@ -2,17 +2,25 @@
   background-color: #ffffff;
 }
 
-/* Hero-billedet midt på siden */
 .hero-only {
-  display: flex;
-  justify-content: center;
-  padding: 0rem 0 3rem;
+  width: 100%;
+  overflow: hidden; /* skjuler det der går ud over billedets ramme */
 }
 
 .hero-image {
   width: 100%;
-  max-width: 1200px;
   height: auto;
-  border-radius: 8px;
   display: block;
+  transition: all 0.3s ease;
+}
+
+/* === MOBIL-VERSION === */
+@media (max-width: 768px) {
+  .hero-image {
+    width: 200%; /* zoom lidt ind så siderne “skæres af” */
+    max-width: none;
+    object-fit: cover; /* bevar proportioner, beskær resten */
+    object-position: center; /* fokusér midt på billedet */
+    transform: translateX(-25%); /* ryk lidt til venstre for at centrere udsnittet */
+  }
 }

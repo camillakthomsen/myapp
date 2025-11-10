@@ -186,3 +186,11 @@ body {
 #root {
   padding-top: 64px;   /* samme højde som .nav */
 }
+
+.burger-icon:hover,
+.burger-menu i:hover,
+.nav-icon:hover {
+  transform: scale(1.1);
+  color: #ff7f50; /* vælg din accentfarve */
+  transition: all 0.2s ease;
+}
