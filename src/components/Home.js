@@ -1,13 +1,19 @@
-// src/components/Home.js
-import React from "react";
-import "../style/Home.css";
+import "./../style/Home.css";
+import Footer from "../components/Footer";
+import FrontpagePicture from "../photoSelfcare/frontpagepicture.png";
 
-function Home() {
+export default function Home() {
   return (
-    <div style={{ paddingTop: "70px" }}>
-        <p>Hello, this is Home</p>
-    </div>
+    <main className="homepage">
+      <section className="hero-only">
+        <img
+          src={FrontpagePicture}
+          alt="DavidBreadHead"
+          className="hero-image"
+        />
+      </section>
+
+      <Footer />
+    </main>
   );
 }
-
-export default Home;

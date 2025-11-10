@@ -1,3 +1,18 @@
-.p {
-    font-size: large;
+.homepage {
+  background-color: #ffffff;
+}
+
+/* Hero-billedet midt på siden */
+.hero-only {
+  display: flex;
+  justify-content: center;
+  padding: 0rem 0 3rem;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  border-radius: 8px;
+  display: block;
 }
