@@ -36,3 +36,110 @@
     transform: rotate(360deg);
   }
 }
+
+/* NAVBAR */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.burger {
+  border: none;
+  background: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.navbar-title {
+  flex: 1;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.delivery-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+/* SIDE MENU */
+
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -270px; /* skub den HELT ud, så den ikke ses */
+  width: 260px;
+  height: 100%;
+  background: white;
+  padding: 70px 20px 20px;
+  transition: left 0.3s ease;
+  z-index: 90;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.15);
+}
+
+.side-menu.open {
+  left: 0; /* glider ind */
+}
+
+.side-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Links i menuen */
+.side-menu li {
+  margin-bottom: 18px;
+  font-size: 45px;
+  transition: color 0.2s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+/* Hover-effekt */
+.side-menu li:hover {
+  color: #555;          /* skift farve */
+  transform: translateX(5px); /* ryk lidt mod højre */
+}
+
+/* MØRK BAGGRUND NÅR MENU ER ÅBEN */
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 80;
+}
+
+/* SCROLL FIX */
+
+body {
+  overflow-x: hidden; /* forhindrer, at man kan scrolle vandret når menu er skjult */
+}
+
+/* Fjerner standard link-styling i menuen */
+.side-menu a {
+  text-decoration: none; /* fjerner understregning */
+  color: black;          /* gør teksten sort */
+  display: block;
+  font-size: 22px;
+  margin-bottom: 18px;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+/* Hover-effekt */
+.side-menu a:hover {
+  color: #555;               /* bliver grå ved hover */
+  transform: translateX(5px); /* lille bevægelse */
+}
+
