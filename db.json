@@ -1,0 +1,62 @@
+{
+  "tasks": [
+    {
+      "id": "123",
+      "title": "Tag medicin",
+      "frequency": "daily",
+      "createdAt": "2025-01-01"
+    },
+    {
+      "id": "9d9d",
+      "title": "40 gram protein til morgenmad",
+      "frequency": "daily",
+      "createdAt": "2025-12-01T13:50:00.193Z"
+    },
+    {
+      "id": "1f0f",
+      "title": "Styrketræning (3 gange om ugen)",
+      "frequency": "threePerWeek",
+      "createdAt": "2025-12-01T13:50:51.133Z"
+    },
+    {
+      "id": "e4c3",
+      "title": "Skærmfri morgen",
+      "frequency": "daily",
+      "createdAt": "2025-12-01T13:52:42.437Z"
+    },
+    {
+      "id": "74a5",
+      "title": "Skærmfri aften",
+      "frequency": "daily",
+      "createdAt": "2025-12-01T13:52:49.828Z"
+    },
+    {
+      "id": "1637",
+      "title": "Morgenmad efter 1-2 timer, aftensmad 3-5 inden søvn",
+      "frequency": "daily",
+      "createdAt": "2025-12-01T13:53:11.314Z"
+    },
+    {
+      "id": "5429",
+      "title": "120+ gram protein om dagen",
+      "frequency": "daily",
+      "createdAt": "2025-12-01T13:56:53.660Z"
+    }
+  ],
+  "completions": [
+    {
+      "date": "2025-01-02",
+      "taskId": "123"
+    },
+    {
+      "id": "55ff",
+      "taskId": "9d9d",
+      "date": "2025-11-30"
+    },
+    {
+      "id": "31eb",
+      "taskId": "e4c3",
+      "date": "2025-11-30"
+    }
+  ]
+}
